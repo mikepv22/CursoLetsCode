@@ -4,7 +4,3 @@
 #Projetos:
 
 - Calculadora
-- Testes no Github
-
-Descricões:
-Projetos muito legais desenvolvidos durante o curso
