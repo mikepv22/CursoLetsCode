@@ -4,8 +4,8 @@ from funcoes import divisao
 from funcoes import multiplicacao
 
 def calcule():
-    a=float(input("Digite um número: "))
-    b=float(input("Digite um número: "))
+    a=input("Digite um número: ")
+    b=input("Digite um número: ")
     op=input('Digite a operação que deseja realizar: ')
 
     if op=='soma' or op=='+':
