@@ -1,6 +1,5 @@
 def soma (a,b):
-<<<<<<< HEAD
     return a+b
-=======
 
->>>>>>> main
+def subtracao (a,b):
+    return a-b
