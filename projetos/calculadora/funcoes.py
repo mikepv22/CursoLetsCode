@@ -1,29 +1,42 @@
 def soma (a,b):
     try:
-        soma= a+b
-    except TypeError:
+        a=float(a)
+        b=float(b)
+    except ValueError:
         print(f"O input 'a' e 'b' devem ser um float ou int, recebido {a}, tipo(a), {b} tipo (b)")
-    return soma
+    else:
+        soma= a+b
+        return soma
 
 def subtracao (a,b):
     try:
-        subtracao= a-b
-    except TypeError:
+        a=float(a)
+        b=float(b)
+    except ValueError:
         print(f"O input 'a' e 'b' devem ser um float ou int, recebido {a}, tipo(a), {b} tipo (b)")
-    return subtracao
+    else:
+        subtracao= a-b
+        return subtracao
 
 def divisao(a,b):
     try:
-        divisao= a-b
-    except TypeError:
+        a=float(a)
+        b=float(b)
+    except ValueError:
         print(f"O input 'a' e 'b' devem ser um float ou int, recebido {a}, tipo(a), {b} tipo (b)")
-    except ZeroDivisionError:
-        print(f"O input 'b' não pode ser 0, recebido {b} tipo (b)")
-    return divisao
+    else:
+        try:
+            divisao= a/b
+            return divisao
+        except ZeroDivisionError:
+            print(f"O input 'b' não pode ser 0, recebido {b} tipo (b)")
 
 def multiplicacao(a,b):
     try:
-        multiplicacao= a-b
+        a=float(a)
+        b=float(b)
     except TypeError:
         print(f"O input 'a' e 'b' devem ser um float ou int, recebido {a}, tipo(a), {b} tipo (b)")
-    return multiplicacao
+    else:
+        multiplicacao= a*b
+        return multiplicacao
